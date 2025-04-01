@@ -148,15 +148,16 @@ export default function Navbar() {
             <div className="container mx-auto px-4 py-3">
               <motion.div className="flex flex-col space-y-4 text-center">
                 {navLinks.map((link) => (
-                  <motion.a
-                    href={link.path}
+                  <motion.div
                     key={link.name}
                     className="text-gray-800 py-2 border-b border-gray-100"
                     onClick={() => setIsMenuOpen(false)}
                     variants={itemVariants}
                   >
-                    {link.name}
-                  </motion.a>
+                    <Link to={link.path} key={link.name}>
+                      {link.name}
+                    </Link>
+                  </motion.div>
                 ))}
 
                 <motion.a
