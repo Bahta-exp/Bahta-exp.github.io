@@ -124,6 +124,7 @@ const InfiniteSlider = ({
     </div>
   );
 };
+
 export default function LogoCloud() {
   const logos = [
     {
@@ -174,7 +175,7 @@ export default function LogoCloud() {
                 <div key={index} className="flex flex-shrink-0 items-center">
                   <img
                     className="w-[30px] md:w-[60px] object-fill brightness-95 opacity-80 grayscale invert hover:invert-0 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-                    src={logo.src}
+                    src={`/web/${logo.src}`}
                     alt={logo.alt}
                   />
                 </div>
