@@ -23,7 +23,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 mt-42 sm:mt-0"
             >
               LOGISTICS SOLUTIONS FROM CHINA TO ETHIOPIA
             </motion.h1>
